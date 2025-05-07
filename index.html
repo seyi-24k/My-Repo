@@ -1,70 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #24292e;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #24292e;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cloud Journey</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to GitHub</h1>
-    </header>
-    <section>
-        <h2>About GitHub</h2>
-        <p>GitHub is a platform for developers and teams to collaborate on code. It provides tools for version control, project management, and code hosting, making it easier to build and maintain software projects.</p>
-        <h3>Key Features:</h3>
-        <ul>
-            <li>Version control with Git</li>
-            <li>Collaboration tools like pull requests and code reviews</li>
-            <li>Project management with issues and boards</li>
-            <li>Hosting for open-source and private repositories</li>
-        </ul>
-        <p>To learn more, visit the <a href="https://github.com" target="_blank" rel="noopener">official GitHub website</a>.</p>
+  <header class="header">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Welcome to My Cloud Journey</h1>
+        <p>Sharing my experiences, projects, and insights as I grow in the world of Cloud Engineering.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <section class="intro">
+      <h2>About This Blog</h2>
+      <p>This blog documents my journey into cloud computing—from earning certifications like AWS and Azure, to building scalable projects, solving real-world problems, and staying current with the latest in tech.</p>
     </section>
-    <footer>
-        <p>&copy; 2023 GitHub Landing Page</p>
-    </footer>
+
+    <section class="features">
+      <div class="feature-card">
+        <i class="fas fa-certificate fa-3x feature-icon"></i>
+        <h3>Certifications</h3>
+        <p>Insights on preparing for and passing top certifications like AWS Solutions Architect, Azure Administrator, and more.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-project-diagram fa-3x feature-icon"></i>
+        <h3>Projects</h3>
+        <p>Explore hands-on projects like CI/CD pipelines, infrastructure as code, Kubernetes clusters, and serverless deployments.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-lightbulb fa-3x feature-icon"></i>
+        <h3>Lessons Learned</h3>
+        <p>Reflections on real-world experiences, troubleshooting tips, and how to grow as a professional in the cloud field.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 My Cloud Journey | Built with 💙 and Cloud</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
