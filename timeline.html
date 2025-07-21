@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timeline</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cloud Journey - Timeline</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav> <!-- reuse nav -->
+  <header class="header">
+    <h1>My Cloud Journey Timeline</h1>
+    <p>Step-by-step growth in my Cloud Engineering career</p>
+  </header>
+
+  <nav class="nav">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="timeline.html" class="active">Timeline</a></li>
+      <li><a href="about.html">About Me</a></li>
       <li><a href="blog.html">Blog</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <main class="content">
-    <h1>My Cloud Journey Timeline</h1>
-    <div id="timeline"></div>
+
+  <main class="main-content">
+    <section class="timeline-section">
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <h3>2018 – Computer Science Degree</h3>
+          <p>Graduated from Afe Babalola University with a Bachelor's in Computer Science, laying the foundation in networking, software, and systems.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="timeline-content">
+          <h3>2019 – Technical Support Role</h3>
+          <p>Started career at Tek Experts supporting Microsoft Windows, Server, and Microsoft 365. Developed strong troubleshooting and communication skills.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-cloud"></i></div>
+        <div class="timeline-content">
+          <h3>2021 – Introduction to Cloud</h3>
+          <p>Began learning about cloud technologies including Azure, AWS, and GCP. Completed hands-on labs and personal projects to gain experience.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+        <div class="timeline-content">
+          <h3>2022 – First Cloud Certification</h3>
+          <p>Earned my first certification (e.g., Azure Fundamentals or AWS Certified Cloud Practitioner). Boosted confidence and validated skills.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-diagram-project"></i></div>
+        <div class="timeline-content">
+          <h3>2023 – Real-World Projects</h3>
+          <p>Built infrastructure-as-code (IaC) projects with Terraform and Bicep. Created CI/CD pipelines and deployed apps on Azure App Service & Kubernetes.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+        <div class="timeline-content">
+          <h3>2024 – Cloud Engineer Role</h3>
+          <p>Transitioned fully into a Cloud Engineering role. Now working on scalable architectures, automating infrastructure, and mentoring others.</p>
+        </div>
+      </div>
+    </section>
   </main>
-  <script src="assets/js/timeline.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 My Cloud Journey</p>
+  </footer>
 </body>
 </html>

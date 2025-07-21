@@ -10,9 +10,11 @@
 <body>
   <header class="header">
     <div class="hero">
+      <div class="overlay"></div>
       <div class="hero-text">
         <h1>Welcome to My Cloud Journey</h1>
         <p>Sharing my experiences, projects, and insights as I grow in the world of Cloud Engineering.</p>
+        <a href="about.html" class="hero-btn">Learn More About Me <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </header>
@@ -23,38 +25,72 @@
       <li><a href="about.html">About Me</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
     </ul>
   </nav>
 
   <main class="main-content">
+
     <section class="intro">
       <h2>About This Blog</h2>
-      <p>This blog documents my journey into cloud computing—from earning certifications like AWS and Azure, to building scalable projects, solving real-world problems, and staying current with the latest in tech.</p>
+      <p>This blog documents my journey into cloud computing — from earning certifications like AWS and Azure to building scalable projects, solving real-world problems, and staying current with the latest in tech.</p>
     </section>
 
     <section class="features">
       <div class="feature-card">
         <i class="fas fa-certificate fa-3x feature-icon"></i>
         <h3>Certifications</h3>
-        <p>Insights on preparing for and passing top certifications like AWS Solutions Architect, Azure Administrator, and more.</p>
+        <p>My approach to preparing for and passing certifications like AWS Solutions Architect, Azure Administrator, and more.</p>
       </div>
       <div class="feature-card">
         <i class="fas fa-project-diagram fa-3x feature-icon"></i>
         <h3>Projects</h3>
-        <p>Explore hands-on projects like CI/CD pipelines, infrastructure as code, Kubernetes clusters, and serverless deployments.</p>
+        <p>Real-world implementations of CI/CD pipelines, Terraform/IaC deployments, Dockerized services, and Kubernetes orchestration.</p>
       </div>
       <div class="feature-card">
         <i class="fas fa-lightbulb fa-3x feature-icon"></i>
         <h3>Lessons Learned</h3>
-        <p>Reflections on real-world experiences, troubleshooting tips, and how to grow as a professional in the cloud field.</p>
+        <p>What went right, what didn’t, and how I’ve evolved through troubleshooting, postmortems, and iteration.</p>
       </div>
     </section>
+
+    <section class="highlight">
+      <h2>🌟 Featured Posts</h2>
+      <div class="highlight-grid">
+        <div class="highlight-card">
+          <h4><i class="fas fa-cloud"></i> Mastering Azure App Service</h4>
+          <p>Step-by-step deployment of a Node.js app with custom domains, SSL, and scaling options.</p>
+          <a href="blog.html">View Post</a>
+        </div>
+        <div class="highlight-card">
+          <h4><i class="fas fa-code-branch"></i> Building a CI/CD Pipeline</h4>
+          <p>GitHub Actions + Terraform + Azure = fully automated deployments with rollback safety.</p>
+          <a href="blog.html">View Post</a>
+        </div>
+        <div class="highlight-card">
+          <h4><i class="fas fa-terminal"></i> Cloud CLI Essentials</h4>
+          <p>Mastering daily-use commands across Azure CLI, AWS CLI, and Bash with time-saving tips.</p>
+          <a href="blog.html">View Post</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
     <p>&copy; 2025 My Cloud Journey | Built with 💙 and Cloud</p>
+    <button id="scrollToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    // Scroll-to-top functionality
+    const scrollBtn = document.getElementById("scrollToTop");
+    window.onscroll = () => {
+      scrollBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+    scrollBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 </body>
 </html>
